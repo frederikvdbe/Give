@@ -1670,7 +1670,7 @@ function give_get_donation_form_submit_button( $form_id ) {
  *
  * @return mixed
  */
-function give_show_goal_progress( $form_id, $args ) {
+function give_show_goal_progress( $form_id, $args = array() ) {
 
 	ob_start();
 	give_get_template( 'shortcode-goal', array( 'form_id' => $form_id, 'args' => $args ) );
